@@ -3,12 +3,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "prebuild": "node scripts/prebuild.js",
-    "build": "npm run prebuild && nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "npm run prebuild && nuxt build",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare && node scripts/prebuild.js"
+    "generate": "nuxt build",
+    "preview": "nuxt preview"
   },
   "dependencies": {
     "nuxt": "^3.13.0",

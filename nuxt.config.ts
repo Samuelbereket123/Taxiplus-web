@@ -16,6 +16,33 @@ export default defineNuxtConfig({
     }
   },
 
+  typescript: {
+    typeCheck: false,
+    shim: false
+  },
+
+  vite: {
+    vue: {
+      script: {
+        defineModel: true,
+        propsDestructure: true
+      }
+    },
+    build: {
+      target: 'esnext'
+    },
+    esbuild: {
+      tsconfigRaw: {
+        compilerOptions: {
+          experimentalDecorators: true
+        }
+      }
+    },
+    resolve: {
+      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+    }
+  },
+
   app: {
     head: {
       title: 'TaxiPlus - Transportation Without Uncertainty',
