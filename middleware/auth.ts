@@ -1,5 +1,4 @@
-// DISABLED FOR MVP - Allow all access without authentication
-export default defineNuxtRouteMiddleware(async (to, from) => {
-    // Authentication disabled for MVP demo
-    // Users can access all pages without login
+// STATIC VERSION - No authentication required
+export default defineNuxtRouteMiddleware(() => {
+    // Allow all access for static demo
 })

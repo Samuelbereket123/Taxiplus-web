@@ -1,11 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
 
-  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/tailwindcss'],
 
   css: ['~/assets/css/main.css'],
+
+  ssr: true,
 
   app: {
     head: {
@@ -19,22 +20,5 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
-  },
-
-  runtimeConfig: {
-    public: {
-      // MVP - No Supabase needed
-      supabaseUrl: 'https://demo.supabase.co',
-      supabaseKey: 'demo-key'
-    }
-  },
-
-  typescript: {
-    strict: false,
-    typeCheck: false
-  },
-
-  nitro: {
-    preset: 'vercel'
   }
 })

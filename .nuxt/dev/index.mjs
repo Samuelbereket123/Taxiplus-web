@@ -652,10 +652,7 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {
-    "supabaseUrl": "https://demo.supabase.co",
-    "supabaseKey": "demo-key"
-  }
+  "public": {}
 };
 const envOptions = {
   prefix: "NITRO_",
@@ -2163,22 +2160,7 @@ _VoZXzAiC_FD0pF2gcbFrhzJMvKrcKxJ2FMdUI0pDs,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"1a43d-6ogeeQI4NcTsd0da3m9yLJ1Gxjg\"",
-    "mtime": "2026-05-13T18:35:32.731Z",
-    "size": 107581,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"68426-bqPnzLyITgijRkDrLle4BY15A/I\"",
-    "mtime": "2026-05-13T18:35:32.732Z",
-    "size": 427046,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
