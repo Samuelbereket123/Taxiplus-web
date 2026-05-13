@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { writeFileSync, mkdirSync } from 'fs'
+import { resolve } from 'path'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
@@ -17,12 +20,17 @@ export default defineNuxtConfig({
     strict: false
   },
 
-  vite: {
-    esbuild: {
-      tsconfigRaw: {
-        compilerOptions: {
-          experimentalDecorators: true
-        }
+  hooks: {
+    'build:before': () => {
+      const nuxtDir = resolve(process.cwd(), '.nuxt')
+      try {
+        mkdirSync(nuxtDir, { recursive: true })
+        writeFileSync(
+          resolve(nuxtDir, 'tsconfig.app.json'),
+          JSON.stringify({ extends: './tsconfig.json' }, null, 2)
+        )
+      } catch (e) {
+        console.log('Could not create tsconfig.app.json:', e)
       }
     }
   },
