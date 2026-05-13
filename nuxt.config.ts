@@ -6,7 +6,15 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  ssr: true,
+  ssr: false,
+
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
+  },
 
   app: {
     head: {
