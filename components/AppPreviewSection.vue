@@ -68,7 +68,7 @@
                   <div class="flex items-center justify-between text-white">
                     <div>
                       <div class="text-sm opacity-90 mb-1">Estimated Fare</div>
-                      <div class="text-2xl font-bold">250 ETB</div>
+                      <div class="text-2xl font-bold">--</div>
                     </div>
                     <div class="text-right">
                       <div class="text-sm opacity-90 mb-1">ETA</div>

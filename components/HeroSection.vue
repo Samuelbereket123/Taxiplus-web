@@ -8,10 +8,19 @@
     
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
       <div class="text-center max-w-4xl mx-auto">
-        <!-- Badge -->
-        <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-primary-50 border border-primary-100 mb-8 animate-fade-in">
-          <span class="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
-          <span class="text-sm font-medium text-primary-700">Now live in Addis Ababa</span>
+        <!-- Development Notice - Prominent -->
+        <div class="mb-8 animate-fade-in">
+          <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-8 py-4 rounded-2xl shadow-xl border-2 border-yellow-500">
+            <div class="flex items-center gap-3">
+              <svg class="w-8 h-8 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+              <div class="text-left">
+                <p class="text-lg font-bold">🚧 Website Under Development</p>
+                <p class="text-sm font-medium opacity-95">Our App is Running Locally (Not Yet Hosted)</p>
+              </div>
+            </div>
+          </div>
         </div>
         
         <!-- Main headline -->
@@ -78,7 +87,7 @@
                   <div class="flex items-center justify-between glass-dark rounded-2xl p-6">
                     <div>
                       <p class="text-gray-400 text-sm mb-1">Estimated Fare</p>
-                      <p class="text-white text-2xl font-bold">250 ETB</p>
+                      <p class="text-white text-2xl font-bold">--</p>
                     </div>
                     <div class="text-right">
                       <p class="text-gray-400 text-sm mb-1">ETA</p>

@@ -13,8 +13,9 @@
         </NuxtLink>
         
         <div class="hidden lg:flex items-center space-x-8">
-          <NuxtLink to="/#features" class="text-gray-600 hover:text-gray-900 transition-colors">Features</NuxtLink>
-          <NuxtLink to="/#how-it-works" class="text-gray-600 hover:text-gray-900 transition-colors">How it Works</NuxtLink>
+          <NuxtLink to="/features" class="text-gray-600 hover:text-gray-900 transition-colors">Features</NuxtLink>
+          <NuxtLink to="/how-it-works" class="text-gray-600 hover:text-gray-900 transition-colors">How it Works</NuxtLink>
+          <NuxtLink to="/pricing" class="text-gray-600 hover:text-gray-900 transition-colors">Pricing</NuxtLink>
           <NuxtLink to="/driver" class="text-gray-600 hover:text-gray-900 transition-colors">Drive with Us</NuxtLink>
         </div>
         

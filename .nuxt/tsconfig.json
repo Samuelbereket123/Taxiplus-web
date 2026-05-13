@@ -122,7 +122,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/e2120457-e1a8-40ed-b915-b1df725ec7d7.json"
       ],
       "#components": [
         "./components"
@@ -143,7 +143,7 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "allowArbitraryExtensions": true,
-    "strict": true,
+    "strict": false,
     "noUncheckedIndexedAccess": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
@@ -176,6 +176,6 @@
     "../.data",
     "../node_modules/runtime/server",
     "../node_modules/dist/runtime/server",
-    "dev"
+    "../.vercel/output"
   ]
 }

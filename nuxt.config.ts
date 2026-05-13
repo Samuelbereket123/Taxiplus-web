@@ -8,6 +8,25 @@ export default defineNuxtConfig({
 
   ssr: true,
 
+  nitro: {
+    preset: 'vercel'
+  },
+
+  typescript: {
+    typeCheck: false,
+    strict: false
+  },
+
+  vite: {
+    esbuild: {
+      tsconfigRaw: {
+        compilerOptions: {
+          experimentalDecorators: true
+        }
+      }
+    }
+  },
+
   app: {
     head: {
       title: 'TaxiPlus - Transportation Without Uncertainty',

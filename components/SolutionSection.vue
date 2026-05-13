@@ -85,7 +85,7 @@
               <div class="grid grid-cols-2 gap-4">
                 <div class="bg-green-50 rounded-xl p-4 border border-green-100">
                   <p class="text-xs text-green-600 mb-1">Trip Cost</p>
-                  <p class="text-xl font-bold text-green-700">250 ETB</p>
+                  <p class="text-xl font-bold text-green-700">Fair Rate</p>
                 </div>
                 <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
                   <p class="text-xs text-blue-600 mb-1">Distance</p>
