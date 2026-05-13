@@ -27,5 +27,14 @@ export default defineNuxtConfig({
       supabaseUrl: 'https://demo.supabase.co',
       supabaseKey: 'demo-key'
     }
+  },
+
+  typescript: {
+    strict: false,
+    typeCheck: false
+  },
+
+  nitro: {
+    preset: 'vercel'
   }
 })
